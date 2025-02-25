@@ -31,13 +31,13 @@ if $CALCULATOR 3 @ 2; then  # If the return code of $PROGRAM is zero (i.e. succe
 fi
 
 # Test 04 (by Baxter): Tests subtraction
-if [[ $(CALCULATOR 1 - 1) -ne 0 ]]; then
+if [[ $($CALCULATOR 1 - 1) -ne 0 ]]; then
   echo 'ERROR! Invalid division!!'
   exit 1
 fi
 
 # Test 05 (by Baxter): Tests division
-if [[ $(CALCULATOR 10 / 2) -ne 5 ]]; then
+if [[ $($CALCULATOR 10 / 2) -ne 5 ]]; then
   echo 'ERROR! Invalid division'
   exit 1
 fi
