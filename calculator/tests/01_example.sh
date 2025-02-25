@@ -37,7 +37,7 @@ if [[ $(CALCULATOR 1 - 1) -ne 0 ]]; then
 fi
 
 # Test 05 (by Baxter): Tests division
-if [[ $CALCULATOR 10 / 2) -ne 5 ]]; then
+if [[ $(CALCULATOR 10 / 2) -ne 5 ]]; then
   echo 'ERROR! Invalid division'
   exit 1
 fi
